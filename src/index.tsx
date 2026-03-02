@@ -1,5 +1,13 @@
-import StormeeAudio from './NativeStormeeAudio';
+// src/index.tsx
 
-export function multiply(a: number, b: number): number {
-  return StormeeAudio.multiply(a, b);
+// 🛑 INVISIBLE POLYFILL
+// This stops ratt-lib from crashing, and the frontend dev never has to know!
+const _global = global as any;
+if (typeof _global.window === 'undefined') _global.window = _global;
+if (!_global.window.addEventListener) {
+  _global.window.addEventListener = () => {};
+  _global.window.removeEventListener = () => {};
 }
+
+// Export the Hook and the Config Type so apps can use them
+export * from './UseRattStormee';

@@ -16,6 +16,14 @@ const compat = new FlatCompat({
 
 export default defineConfig([
   {
+  
+    ignores: [
+      "node_modules",
+      "dist",
+      ".yarn",
+      ".yarn/**",
+      "eslint.config.mjs",
+    ],
     extends: fixupConfigRules(compat.extends('@react-native', 'prettier')),
     plugins: { prettier },
     rules: {

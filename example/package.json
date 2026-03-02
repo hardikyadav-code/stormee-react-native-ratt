@@ -10,8 +10,11 @@
     "build:ios": "react-native build-ios --mode Debug"
   },
   "dependencies": {
+    "events": "^3.3.0",
+    "node-libs-react-native": "^1.2.1",
     "react": "19.2.0",
-    "react-native": "0.83.0"
+    "react-native": "0.83.0",
+    "readable-stream": "^4.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -23,7 +26,10 @@
     "@react-native/babel-preset": "0.83.0",
     "@react-native/metro-config": "0.83.0",
     "@react-native/typescript-config": "0.83.0",
+    "@types/events": "^3",
     "@types/react": "^19.2.0",
+    "@types/readable-stream": "^4",
+    "babel-plugin-module-resolver": "^5.0.2",
     "react-native-builder-bob": "^0.40.13",
     "react-native-monorepo-config": "^0.3.3"
   },

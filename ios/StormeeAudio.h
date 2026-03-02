@@ -1,5 +1,7 @@
+#import <React/RCTEventEmitter.h>
 #import <StormeeAudioSpec/StormeeAudioSpec.h>
 
-@interface StormeeAudio : NSObject <NativeStormeeAudioSpec>
+// Change NSObject to RCTEventEmitter
+@interface StormeeAudio : RCTEventEmitter <NativeStormeeAudioSpec>
 
 @end

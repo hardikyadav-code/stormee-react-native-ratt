@@ -4,14 +4,11 @@ This package allows the functionality of using ratt in react natinve enviroment
 
 ## Installation
 
-
 ```sh
 npm install react-native-stormee-audio
 ```
 
-
 ## Usage
-
 
 ```js
 import { multiply } from 'react-native-stormee-audio';
@@ -20,7 +17,6 @@ import { multiply } from 'react-native-stormee-audio';
 
 const result = multiply(3, 7);
 ```
-
 
 ## Contributing
 
